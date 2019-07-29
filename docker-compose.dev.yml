@@ -127,7 +127,7 @@ volumes:
     driver: local
     driver_opts:
       type: bind
-      device: /home/ip310/Documents/dc_ancol/backup
+      device: /home/a407/Documents/dc_ancol/backup
       o: bind
   redis:
     driver: local
