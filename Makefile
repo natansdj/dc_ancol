@@ -19,10 +19,10 @@ up:
 	docker-compose up -d
 
 start:
-	docker-compose start
+	docker start dev_proxy dev_mysql dev_mailhog && docker-compose up -d --force-recreate redis app html
 
 stop:
-	docker-compose stop
+	docker stop dev_proxy dev_mysql dev_mailhog && docker-compose stop
 
 state:
 	docker-compose ps
