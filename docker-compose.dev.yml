@@ -140,7 +140,7 @@ volumes:
     driver: local
     driver_opts:
       type: bind
-      device: /home/a407/Documents/dc_ancol/backup
+      device: /home/nath/Documents/dc_ancol/backup
       o: bind
   redis:
     driver: local
@@ -152,7 +152,7 @@ volumes:
     driver: local
     driver_opts:
       type: bind
-      device: /home/a407/Documents/dc_ancol/backup/maildir
+      device: /home/nath/Documents/dc_ancol/backup/maildir
       o: bind
 
 networks:

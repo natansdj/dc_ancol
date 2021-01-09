@@ -19,10 +19,10 @@ up:
 	docker-compose up -d
 
 start:
-	docker start dev_proxy dev_mysql dev_mailhog && docker-compose up -d app html
+	docker start dev_proxy dev_mysql && docker-compose up -d app
 
 stop:
-	docker stop dev_mysql dev_mailhog && docker-compose stop
+	docker stop dev_mysql && docker-compose stop
 
 state:
 	docker-compose ps
